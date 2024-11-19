@@ -4,11 +4,15 @@
       xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
   <kcfgfile name=""/>
-
   <group name="General">
-    <entry name="colorHex" type="color">
+    <entry name="colorHex" type="String">
       <default>#ddddff</default>
-      </entry>
+    </entry>
+    <entry name="dateFormat" type="String">
+      <default>ddd d MMM</default>
+    </entry>
+    <entry name="timeFormat" type="String">
+      <default>HH:mm</default>
+    </entry>
   </group>
-
 </kcfg>

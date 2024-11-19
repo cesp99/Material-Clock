@@ -19,7 +19,7 @@ Item {
         RowLayout {
             Label {
                 text: i18n("Color")
-                color: fgColor
+                color: cfg_colorHex
             }
             TextField {
                 id: colorhex
