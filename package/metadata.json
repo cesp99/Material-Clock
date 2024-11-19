@@ -1,0 +1,26 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Carlo Esposito"
+            }
+        ],
+        "Name": "Material Clock",
+        "Id": "material.clock",
+        "Description": "A simple looking clock trying to imitate the Material Design.",
+        "Category": "Utilities",
+        "Icon": "clock",
+        "EnabledByDefault": true,
+        "License": "GPL-3.0+",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.0.1",
+        "Website": "https://github.com/cesp99/Material-Clock"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-WidgetType": "Configuration",
+    "X-KDE-Plasma-MainScript": "ui/main.qml",
+    "X-KDE-Plasma-ConfigurationScript": "config/config.qml"
+}
