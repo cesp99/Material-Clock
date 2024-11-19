@@ -7,7 +7,7 @@
 
   <group name="General">
     <entry name="colorHex" type="color">
-      <default>#ffffff</default>
+      <default>#ddddff</default>
       </entry>
   </group>
 

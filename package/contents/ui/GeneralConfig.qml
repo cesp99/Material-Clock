@@ -19,7 +19,7 @@ Item {
         RowLayout {
             Label {
                 text: i18n("Color")
-                color: PlasmaCore.Theme.color  // Use Plasma's theme color for label text
+                color: fgColor
             }
             TextField {
                 id: colorhex

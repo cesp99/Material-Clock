@@ -1,5 +1,5 @@
 # Material Clock for KDE Plasma 6
-# Version 0.0.1
+# Version 0.0.2
 
 **Material Clock** is a simple, Material Design-inspired clock plasmoid for KDE Plasma 6.
 

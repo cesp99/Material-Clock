@@ -1,5 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.12
 import org.kde.plasma.plasmoid
 
 PlasmoidItem {
@@ -21,12 +22,13 @@ PlasmoidItem {
     // Layout container
     Column {
         id: wrapper
+
         width: root.width
         height: root.height
+
+
         anchors.centerIn: parent
         spacing: 5
-        // Ensuring the column's height is correctly calculated
-        height: Math.max(root.height * 0.4, 100)  // Minimum height of 100px or 40% of root
 
         // Date Text (small, centered)
         Text {
@@ -36,8 +38,7 @@ PlasmoidItem {
             font.pixelSize: parent.height * 0.1
             text: Qt.formatDateTime(new Date(), "ddd d MMM")
             color: colorPlasmoid
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
+            verticalAlignment: Text.AlignVCenter
         }
 
         // Time Text (large, centered)
@@ -48,8 +49,7 @@ PlasmoidItem {
             font.pixelSize: parent.height * 0.4
             text: Qt.formatDateTime(new Date(), "HH:mm")
             color: colorPlasmoid
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: dateText.bottom
+            verticalAlignment: Text.AlignVCenter
         }
     }
 
