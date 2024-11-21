@@ -41,7 +41,7 @@ PlasmoidItem {
                 Layout.alignment: Qt.AlignHCenter
                 font.family: poppinsThin.name
                 font.pixelSize: root.height * 0.1
-                text: Qt.formatDateTime(new Date(), Plasmoid.configuration.dateFormat || "ddd d MMM").toLowerCase()
+                text: Qt.formatDateTime(new Date(), Plasmoid.configuration.dateFormat).toLowerCase()
                 color: colorPlasmoid
                 horizontalAlignment: Text.AlignHCenter
             }
@@ -52,7 +52,7 @@ PlasmoidItem {
                 Layout.alignment: Qt.AlignHCenter
                 font.family: poppinsRegular.name
                 font.pixelSize: root.height * 0.4
-                text: Qt.formatDateTime(new Date(), Plasmoid.configuration.timeFormat || "HH:mm")
+                text: Qt.formatDateTime(new Date(), Plasmoid.configuration.timeFormat)
                 color: colorPlasmoid
                 horizontalAlignment: Text.AlignHCenter
             }
@@ -66,8 +66,8 @@ PlasmoidItem {
         repeat: true
         onTriggered: {
             var now = new Date()
-            dateText.text = Qt.formatDateTime(now, Plasmoid.configuration.dateFormat || "ddd d MMM").toLowerCase()
-            timeText.text = Qt.formatDateTime(now, Plasmoid.configuration.timeFormat || "HH:mm")
+            dateText.text = Qt.formatDateTime(now, Plasmoid.configuration.dateFormat).toLowerCase()
+            timeText.text = Qt.formatDateTime(now, Plasmoid.configuration.timeFormat)
         }
     }
 }

@@ -15,7 +15,7 @@
         "ServiceTypes": [
             "Plasma/Applet"
         ],
-        "Version": "0.0.3",
+        "Version": "0.0.4",
         "Website": "https://github.com/cesp99/Material-Clock"
     },
     "X-Plasma-API-Minimum-Version": "6.0",
